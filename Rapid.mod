@@ -7,10 +7,10 @@ VAR string receive_string;
 	CONST robtarget p20:=[[537.09,134.35,411.05],[0.445097,0.0179447,0.895165,-0.0156757],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
 PROC main()
 
-SocketClose server_socket; !Cierra los dos por si acaso est·n abiertos (tanto servidor como cliente)
+SocketClose server_socket; !Cierra los dos por si acaso est√°n abiertos (tanto servidor como cliente)
 SocketClose client_socket;
 SocketCreate server_socket; !En el servidor cremos el socket (crear el puerto o abrir el puerto)
-SocketBind server_socket, "192.168.125.1", 1025; !le damos la direcciÛn y el puerto que queremos abrir
+SocketBind server_socket, "192.168.125.1", 1025; !le damos la direcci√≥n y el puerto que queremos abrir
 SocketListen server_socket; !Escucho el puerto del servidor
 SocketAccept server_socket, client_socket\ClientAddress:=client_ip; !Acepto lo que me manda
 
