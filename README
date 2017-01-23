@@ -1,0 +1,5 @@
+The file Rapid.mod communicate the PC with the robot ABB controller. 
+The controller of ABB is the server and the PC is the client. I used "SocketestV3.0" to read the communication.
+You should change the position of "MoveJ" or comment with "!"
+
+If have any doubt contact with me. Thanks 
